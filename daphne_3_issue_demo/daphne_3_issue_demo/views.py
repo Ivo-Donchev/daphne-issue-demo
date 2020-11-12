@@ -13,11 +13,11 @@ def make_it_slow():
         print(i)
 
 
-def view_1(request):
+def view_1(request):  # Url is `/1/`
     make_it_slow()  # Sleeps for 3 seconds
     return HttpResponse('view_1 response')
 
 
-def view_2(request):
+def view_2(request):  # Url is `/2/`
     make_it_slow()  # Sleeps for 3 seconds
     return HttpResponse('view_2 response')
