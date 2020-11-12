@@ -14,10 +14,10 @@ def make_it_slow():
 
 
 def view_1(request):
-    make_it_slow()
+    make_it_slow()  # Sleeps for 3 seconds
     return HttpResponse('view_1 response')
 
 
 def view_2(request):
-    make_it_slow()
+    make_it_slow()  # Sleeps for 3 seconds
     return HttpResponse('view_2 response')
